@@ -26,6 +26,7 @@ Below are some screenshots from the project:
 ![](images/orange_fruit1.PNG)
 ![](images/ortange-fruit2.PNG)
 ![](imagesorangeveati1.PNG)
+![](images/orangeveati1.PNG)
 ![](images/orangeveati2.PNG)
 ---
 
