@@ -61,7 +61,24 @@ git clone https://github.com/Baskar-forever/Fruits_Vegitable_Varity_Comparision.
 
 # Open index.html in any web browser
 ```
+---
+## Screenshots
+Below are some screenshots from the project:
 
+### Homepage
+![Fruits Page](images/homepage1.PNG)
+![Fruits Page](images/homepage2.PNG)
+
+### Fruits Section
+
+![Fruits Page](images/fruits_page2.PNG)
+
+
+### Orange Variety Comparison
+![](images/orange_fruit1.PNG)
+![](images/ortange-fruit2.PNG)
+![](imagesorangeveati1.PNG)
+![](images/orangeveati2.PNG)
 ---
 
 ## Future Enhancements
