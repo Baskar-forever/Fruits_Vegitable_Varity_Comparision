@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jazz Apple | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+</head>
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../..//fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jazz Apple</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Apple Page Header -->
+  <section class="variety-header">
+    <h1>Jazz Apple</h1>
+    <p>Jazz apples are known for their crisp, dense texture and balanced sweet-tart flavor, making them a popular choice for snacking and cooking.</p>
+  </section>
+
+  <!-- Apple Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Good source of fiber, supporting digestive health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Rich in antioxidants that combat oxidative stress.</p>
+        </div>
+        <div class="variety-item">
+          <p>Contains vitamin C, promoting skin and immune health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports heart health by aiding cholesterol regulation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Aids in weight management due to high fiber and low calories.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps maintain steady blood sugar levels.</p>
+        </div>
+        <div class="variety-item">
+          <p>Reduces risk of cardiovascular diseases with its nutrient profile.</p>
+        </div>
+        <div class="variety-item">
+          <p>Promotes hydration and reduces fatigue with its high water content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>NatureCompare</h3>
+      </div>
+      <p>&copy; 2024 NatureCompare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calabrese Broccoli | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Calabrese_Broccoli.jpg')
+        center/cover no-repeat;
+    }
+  </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../../index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Calabrese Broccoli</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Broccoli Page Header -->
+  <section class="variety-header">
+    <h1>Calabrese Broccoli</h1>
+    <p>Calabrese Broccoli is a nutrient-dense vegetable rich in vitamins and minerals, known for its deep green color and delicious taste.</p>
+  </section>
+
+  <!-- Broccoli Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Rich in vitamin C, boosting immune function.</p>
+        </div>
+        <div class="variety-item">
+          <p>High in fiber, promoting digestive health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Loaded with antioxidants, reducing inflammation.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports heart health and lowers cholesterol levels.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Boosts immune defense and fights infections.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports digestion and reduces constipation.</p>
+        </div>
+        <div class="variety-item">
+          <p>Improves heart health by reducing bad cholesterol.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps maintain strong bones with calcium and vitamin K.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

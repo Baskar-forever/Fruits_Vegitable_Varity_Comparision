@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Cayenne Pineapple | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Smooth_Cayenne_Pineapple.jpg')
+        center/cover no-repeat;
+    }
+    </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../..//fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Smooth Cayenne Pineapple</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Pineapple Page Header -->
+  <section class="variety-header">
+    <h1>Smooth Cayenne Pineapple</h1>
+    <p>Smooth Cayenne Pineapples are known for their juicy flesh, moderate acidity, and high sugar content, making them a preferred choice for fresh consumption and canning.</p>
+  </section>
+
+  <!-- Pineapple Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Rich in vitamin C, enhancing immune function.</p>
+        </div>
+        <div class="variety-item">
+          <p>Contains bromelain, aiding digestion and reducing inflammation.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports bone health due to its manganese content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps in hydration and detoxification.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Aids in digestion and helps prevent bloating.</p>
+        </div>
+        <div class="variety-item">
+          <p>Boosts energy levels with natural sugars.</p>
+        </div>
+        <div class="variety-item">
+          <p>Reduces inflammation and supports joint health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Promotes cardiovascular health by improving circulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

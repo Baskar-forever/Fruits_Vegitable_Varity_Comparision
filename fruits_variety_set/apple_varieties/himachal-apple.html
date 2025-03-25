@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himachal Apple | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+</head>
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../..//fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Himachal Apple</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Apple Page Header -->
+  <section class="variety-header">
+    <h1>Himachal Apple</h1>
+    <p>Himachal apples, grown in the pristine valleys of Himachal Pradesh, are renowned for their exceptional taste, crisp texture, and rich nutritional content.</p>
+  </section>
+
+  <!-- Apple Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Rich in fiber, promoting digestive health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Loaded with antioxidants that protect against cell damage.</p>
+        </div>
+        <div class="variety-item">
+          <p>Enhances heart health by maintaining cholesterol levels.</p>
+        </div>
+        <div class="variety-item">
+          <p>Boosts immune function with essential vitamins.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Aids in weight management due to its low calorie and high fiber content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps reduce the risk of heart disease by improving blood circulation.</p>
+        </div>
+        <div class="variety-item">
+          <p>Promotes glowing skin with its natural hydration and vitamin C.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps regulate blood sugar levels, beneficial for diabetics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

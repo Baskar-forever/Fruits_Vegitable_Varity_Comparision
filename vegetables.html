@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vegetables | Organic vs Hybrid</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="vegetables.html" class="active">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Vegetables Header Section -->
+    <section class="vegetables-header">
+      <h1>Explore Vegetables</h1>
+      <p>Click on a vegetable to view its varieties and benefits.</p>
+    </section>
+    
+    <!-- Categories & Card Section -->
+    <section id="categories" class="categories">
+      <div class="category-cards">
+        <a href="vegetables_list/carrot.html" class="card">
+          <div class="card-image" style="background-image: url('https://th.bing.com/th/id/OIP.QJjWtYADoL7rJ6eglExwJQHaE8?w=1920&h=1280&rs=1&pid=ImgDetMain');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Carrot</h3>
+            <p>Discover different carrot varieties and their benefits</p>
+          </div>
+        </a>
+        <a href="vegetables_list/tomato.html" class="card">
+          <div class="card-image" style="background-image: url('https://wallpapercave.com/wp/wp5329505.jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Tomato</h3>
+            <p>Explore tomato types and their nutritional value</p>
+          </div>
+        </a>
+        <a href="vegetables_list/broccoli.html" class="card">
+          <div class="card-image" style="background-image: url('https://th.bing.com/th/id/OIP.3cIUFJ-mXmYzTyi8AyyXsgHaE7?rs=1&pid=ImgDetMain');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Broccoli</h3>
+            <p>Learn about different broccoli varieties and their uses</p>
+          </div>
+        </a>
+        <a href="vegetables_list/spinach.html" class="card">
+          <div class="card-image" style="background-image: url('https://static.vecteezy.com/system/resources/previews/030/626/081/large_2x/spinach-image-hd-free-photo.jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Spinach</h3>
+            <p>Rich in nutrients and great for health</p>
+          </div>
+        </a>
+        <a href="vegetables_list/potato.html" class="card">
+          <div class="card-image" style="background-image: url('https://images.pexels.com/photos/144248/potatoes-vegetables-erdfrucht-bio-144248.jpeg?cs=srgb&dl=potatoes-144248.jpg&fm=jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Potato</h3>
+            <p>Versatile vegetable used in various dishes</p>
+          </div>
+        </a>
+        <a href="vegetables_list/onion.html" class="card">
+          <div class="card-image" style="background-image: url('https://images.freeimages.com/images/large-previews/47d/onion-1322677.jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Onion</h3>
+            <p>Common kitchen ingredient with multiple varieties</p>
+          </div>
+        </a>
+        <a href="vegetables_list/cabbage.html" class="card">
+          <div class="card-image" style="background-image: url('https://wallpaperaccess.com/full/9397916.jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Cabbage</h3>
+            <p>Great for salads and soups</p>
+          </div>
+        </a>
+        <a href="vegetables_list/pepper.html" class="card">
+          <div class="card-image" style="background-image: url('https://cdn.britannica.com/62/118162-050-56CC9480/cultivar-Thai-chili-peppers-fruits.jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Pepper</h3>
+            <p>Available in different colors with unique flavors</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dasheri Mango | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Dasheri_Mango.jpg')
+        center/cover no-repeat;
+    }
+    </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../..//fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Dasheri Mango</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Mango Page Header -->
+  <section class="variety-header">
+    <h1>Dasheri Mango</h1>
+    <p>Dasheri Mango is a popular variety known for its sweet and aromatic flavor, smooth texture, and juicy pulp, making it a favorite in India and beyond.</p>
+  </section>
+
+  <!-- Mango Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Rich in vitamin C, boosting immunity and skin health.</p>
+        </div>
+        <div class="variety-item">
+          <p>High in dietary fiber, promoting digestive health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Loaded with antioxidants to fight free radicals.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports eye health due to its high vitamin A content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Helps improve digestion and prevent constipation.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports a healthy heart by regulating cholesterol levels.</p>
+        </div>
+        <div class="variety-item">
+          <p>Boosts energy levels naturally with its natural sugars.</p>
+        </div>
+        <div class="variety-item">
+          <p>Promotes glowing skin and reduces signs of aging.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

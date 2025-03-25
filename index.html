@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organic vs Non-Organic | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover the Difference</h1>
+        <p>Explore the visual and nutritional differences between organic and non-organic produce</p>
+        <a href="#categories" class="btn">Start Comparing</a>
+      </div>
+    </section>
+
+    <section id="categories" class="categories">
+      <h2>Choose a Category</h2>
+      <div class="category-cards">
+        <a href="fruits.html" class="card">
+          <div class="card-image" style="background-image: url('https://t4.ftcdn.net/jpg/00/65/70/65/360_F_65706597_uNm2SwlPIuNUDuMwo6stBd81e25Y8K8s.jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Fruits</h3>
+            <p>Compare 10 different organic and non-organic fruits</p>
+          </div>
+        </a>
+        <a href="vegetables.html" class="card">
+          <div class="card-image" style="background-image: url('https://wallpapercave.com/wp/wp3104916.jpg');">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Vegetables</h3>
+            <p>Compare 10 different organic and non-organic vegetables</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>NatureCompare</h3>
+        <p>Exploring the natural differences in our food</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fruits.html">Fruits</a></li>
+          <li><a href="vegetables.html">Vegetables</a></li>
+        </ul>
+      </div>
+      <div class="footer-credit">
+        <p>Images courtesy of Unsplash</p>
+        <p>&copy; 2024 NatureCompare. All rights reserved.</p>
+      </div>
+    </div>
+  </footer> -->
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Potato | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/d/d5/Red_Potato.jpg')
+        center/cover no-repeat;
+    }
+  </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../../index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Red Potato</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Potato Page Header -->
+  <section class="variety-header">
+    <h1>Red Potato</h1>
+    <p>Red Potatoes are known for their thin, smooth red skin, firm texture, and excellent flavor, making them ideal for boiling, roasting, and salads.</p>
+  </section>
+
+  <!-- Potato Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Rich in fiber, supporting digestive health.</p>
+        </div>
+        <div class="variety-item">
+          <p>High in vitamin C, boosting the immune system.</p>
+        </div>
+        <div class="variety-item">
+          <p>Contains antioxidants that promote heart health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Good source of potassium for muscle and nerve function.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Regulates blood pressure with its potassium content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports digestion and gut health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Reduces inflammation and promotes healthy skin.</p>
+        </div>
+        <div class="variety-item">
+          <p>Provides sustained energy with complex carbohydrates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

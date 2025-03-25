@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teton Spinach | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Teton_Spinach.jpg')
+        center/cover no-repeat;
+    }
+  </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../../index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Teton Spinach</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Spinach Page Header -->
+  <section class="variety-header">
+    <h1>Teton Spinach</h1>
+    <p>Teton Spinach is a nutrient-rich variety known for its dark green leaves, high resistance to disease, and excellent flavor.</p>
+  </section>
+
+  <!-- Spinach Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>High in iron, supporting oxygen circulation in the body.</p>
+        </div>
+        <div class="variety-item">
+          <p>Rich in vitamins A, C, and K for immune support.</p>
+        </div>
+        <div class="variety-item">
+          <p>Contains antioxidants that promote skin and heart health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Boosts digestion and gut health with fiber.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Supports bone health and reduces osteoporosis risk.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps lower blood pressure with potassium content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Enhances vision and reduces risk of eye diseases.</p>
+        </div>
+        <div class="variety-item">
+          <p>Prevents iron deficiency and promotes energy levels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

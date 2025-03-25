@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cara Cara Orange | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://5.imimg.com/data5/ANDROID/Default/2023/12/367054767/UD/OB/YX/205199942/product-jpeg-500x500.jpg')
+        center/cover no-repeat;
+    }
+    </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../..//fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Cara Cara Orange</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Orange Page Header -->
+  <section class="variety-header">
+    <h1>Cara Cara Orange</h1>
+    <p>Cara Cara Oranges have a pinkish-red flesh with a sweet, low-acid flavor, making them a delicious and nutritious citrus choice.</p>
+  </section>
+
+  <!-- Orange Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>High in vitamin C, boosting immune health and collagen production.</p>
+        </div>
+        <div class="variety-item">
+          <p>Rich in lycopene, an antioxidant that supports heart health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Promotes eye health with vitamin A and carotenoids.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports digestion and gut health with natural fiber.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Reduces risk of heart disease by lowering oxidative stress.</p>
+        </div>
+        <div class="variety-item">
+          <p>Enhances skin health by reducing free radical damage.</p>
+        </div>
+        <div class="variety-item">
+          <p>Aids in maintaining blood sugar levels.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps improve digestion and prevents constipation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidalia Onion | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/6/68/Vidalia_Onions.jpg')
+        center/cover no-repeat;
+    }
+  </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../../index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Vidalia Onion</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Onion Page Header -->
+  <section class="variety-header">
+    <h1>Vidalia Onion</h1>
+    <p>Vidalia Onions are known for their sweet and mild flavor, making them a favorite choice for raw consumption, salads, and gourmet dishes.</p>
+  </section>
+
+  <!-- Onion Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Rich in antioxidants, promoting overall wellness.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports heart health by reducing cholesterol levels.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps regulate blood sugar levels naturally.</p>
+        </div>
+        <div class="variety-item">
+          <p>Boosts immunity and reduces inflammation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Improves digestive health and prevents bloating.</p>
+        </div>
+        <div class="variety-item">
+          <p>Aids in weight management and metabolism boost.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps fight infections and strengthens the immune system.</p>
+        </div>
+        <div class="variety-item">
+          <p>Reduces the risk of chronic diseases with essential nutrients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

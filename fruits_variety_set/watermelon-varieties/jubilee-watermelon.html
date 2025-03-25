@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jubilee Watermelon | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Watermelon.jpg')
+        center/cover no-repeat;
+    }
+    </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../..//fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jubilee Watermelon</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Watermelon Page Header -->
+  <section class="variety-header">
+    <h1>Jubilee Watermelon</h1>
+    <p>Jubilee Watermelons are large, oblong-shaped melons known for their sweet, refreshing taste and high water content, making them a favorite for summer.</p>
+  </section>
+
+  <!-- Watermelon Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Excellent source of hydration due to high water content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Rich in antioxidants like lycopene that promote heart health.</p>
+        </div>
+        <div class="variety-item">
+          <p>Packed with vitamins A and C for skin and immune support.</p>
+        </div>
+        <div class="variety-item">
+          <p>Helps muscle recovery and reduces soreness.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Prevents dehydration, especially in warm weather.</p>
+        </div>
+        <div class="variety-item">
+          <p>Promotes digestion with its fiber content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Reduces inflammation and improves overall wellness.</p>
+        </div>
+        <div class="variety-item">
+          <p>Provides a natural source of energy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

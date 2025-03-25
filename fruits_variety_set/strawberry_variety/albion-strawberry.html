@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albion Strawberry | Health Benefits & Issues Solved</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../varity-css.css" />
+  <style>
+    .hero{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Albion_Strawberries.jpg')
+        center/cover no-repeat;
+    }
+    </style>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">NatureCompare</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../..//fruits.html">Fruits</a></li>
+        <li><a href="../../vegetables.html">Vegetables</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Albion Strawberry</h1>
+      <a href="#details" class="btn">Explore Details</a>
+    </div>
+  </section>
+
+  <!-- Strawberry Page Header -->
+  <section class="variety-header">
+    <h1>Albion Strawberry</h1>
+    <p>Albion Strawberries are known for their deep red color, high sugar content, and long shelf life.</p>
+  </section>
+
+  <!-- Strawberry Comparison/Card Section -->
+  <section class="variety-comparison" id="details">
+    <div class="variety-category">
+      <h2>Health Benefits</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>High in vitamin C, boosting immune function.</p>
+        </div>
+        <div class="variety-item">
+          <p>Contains antioxidants that help reduce inflammation.</p>
+        </div>
+        <div class="variety-item">
+          <p>Supports heart health by lowering bad cholesterol.</p>
+        </div>
+        <div class="variety-item">
+          <p>Rich in fiber, aiding digestion and gut health.</p>
+        </div>
+      </div>
+    </div>
+    <div class="variety-category">
+      <h2>Issues It Helps Solve</h2>
+      <div class="variety-list">
+        <div class="variety-item">
+          <p>Helps regulate blood sugar levels for diabetics.</p>
+        </div>
+        <div class="variety-item">
+          <p>Improves skin health with its rich vitamin C content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Aids in weight management with its low-calorie content.</p>
+        </div>
+        <div class="variety-item">
+          <p>Boosts metabolism and energy levels naturally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
