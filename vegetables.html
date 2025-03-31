@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vegetables | Organic vs Hybrid</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  
+
+    
+    
+    <script src="script.js"></script>
 </head>
+
 <body>
   <!-- Header & Navigation -->
   <header>
@@ -26,23 +31,26 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="fruits.html">Fruits</a></li>
         <li><a href="vegetables.html" class="active">Vegetables</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><button id="theme-toggle">🌓</button></li>
       </ul>
     </nav>
   </header>
-  
+
   <main>
     <!-- Vegetables Header Section -->
     <section class="vegetables-header">
       <h1>Explore Vegetables</h1>
       <p>Click on a vegetable to view its varieties and benefits.</p>
     </section>
-    
+
     <!-- Categories & Card Section -->
     <section id="categories" class="categories">
       <div class="category-cards">
         <a href="vegetables_list/carrot.html" class="card">
-          <div class="card-image" style="background-image: url('https://th.bing.com/th/id/OIP.QJjWtYADoL7rJ6eglExwJQHaE8?w=1920&h=1280&rs=1&pid=ImgDetMain');">
+          <div class="card-image"
+            style="background-image: url('https://th.bing.com/th/id/OIP.QJjWtYADoL7rJ6eglExwJQHaE8?w=1920&h=1280&rs=1&pid=ImgDetMain');">
             <div class="card-overlay"></div>
           </div>
           <div class="card-content">
@@ -60,7 +68,8 @@
           </div>
         </a>
         <a href="vegetables_list/broccoli.html" class="card">
-          <div class="card-image" style="background-image: url('https://th.bing.com/th/id/OIP.3cIUFJ-mXmYzTyi8AyyXsgHaE7?rs=1&pid=ImgDetMain');">
+          <div class="card-image"
+            style="background-image: url('https://th.bing.com/th/id/OIP.3cIUFJ-mXmYzTyi8AyyXsgHaE7?rs=1&pid=ImgDetMain');">
             <div class="card-overlay"></div>
           </div>
           <div class="card-content">
@@ -69,7 +78,8 @@
           </div>
         </a>
         <a href="vegetables_list/spinach.html" class="card">
-          <div class="card-image" style="background-image: url('https://static.vecteezy.com/system/resources/previews/030/626/081/large_2x/spinach-image-hd-free-photo.jpg');">
+          <div class="card-image"
+            style="background-image: url('https://static.vecteezy.com/system/resources/previews/030/626/081/large_2x/spinach-image-hd-free-photo.jpg');">
             <div class="card-overlay"></div>
           </div>
           <div class="card-content">
@@ -78,7 +88,8 @@
           </div>
         </a>
         <a href="vegetables_list/potato.html" class="card">
-          <div class="card-image" style="background-image: url('https://images.pexels.com/photos/144248/potatoes-vegetables-erdfrucht-bio-144248.jpeg?cs=srgb&dl=potatoes-144248.jpg&fm=jpg');">
+          <div class="card-image"
+            style="background-image: url('https://images.pexels.com/photos/144248/potatoes-vegetables-erdfrucht-bio-144248.jpeg?cs=srgb&dl=potatoes-144248.jpg&fm=jpg');">
             <div class="card-overlay"></div>
           </div>
           <div class="card-content">
@@ -87,7 +98,8 @@
           </div>
         </a>
         <a href="vegetables_list/onion.html" class="card">
-          <div class="card-image" style="background-image: url('https://images.freeimages.com/images/large-previews/47d/onion-1322677.jpg');">
+          <div class="card-image"
+            style="background-image: url('https://images.freeimages.com/images/large-previews/47d/onion-1322677.jpg');">
             <div class="card-overlay"></div>
           </div>
           <div class="card-content">
@@ -105,7 +117,8 @@
           </div>
         </a>
         <a href="vegetables_list/pepper.html" class="card">
-          <div class="card-image" style="background-image: url('https://cdn.britannica.com/62/118162-050-56CC9480/cultivar-Thai-chili-peppers-fruits.jpg');">
+          <div class="card-image"
+            style="background-image: url('https://cdn.britannica.com/62/118162-050-56CC9480/cultivar-Thai-chili-peppers-fruits.jpg');">
             <div class="card-overlay"></div>
           </div>
           <div class="card-content">
@@ -116,20 +129,253 @@
       </div>
     </section>
   </main>
+  <style>
+    /* Footer Styles */
+    .footer {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 1rem;
+      padding: 1.5rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-content {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.875rem;
+      color: #4a5568;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .footer-links li {
+      margin-right: 1rem;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    .footer-divider {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-color: #e2e8f0;
+    }
+
+    .footer-credit {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+
+    .footer-credit a {
+      text-decoration: none;
+      color: #4a5568;
+    }
+
+    /* Dark Mode Footer Styles */
+    body.dark .footer {
+      background-color: #333;
+      color: #f1f1f1;
+    }
+
+    body.dark .footer-links a {
+      color: #f1f1f1;
+    }
+
+    body.dark .footer-divider {
+      border-color: #555;
+    }
+
+    body.dark .footer-credit a {
+      color: #f1f1f1;
+    }
+  </style>
+
+
+
+
+  <style>
+    /* Footer Styles */
+    .footer {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 1rem;
+      padding: 1.5rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-content {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.875rem;
+      color: #4a5568;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .footer-links li {
+      margin-right: 1rem;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    .footer-divider {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-color: #e2e8f0;
+    }
+
+    .footer-credit {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+
+    .footer-credit a {
+      text-decoration: none;
+      color: #4a5568;
+    }
+
+    /* Dark Mode Footer Styles */
+    body.dark .footer {
+      background-color: #333;
+      color: #f1f1f1;
+    }
+
+    body.dark .footer-links a {
+      color: #f1f1f1;
+    }
+
+    body.dark .footer-divider {
+      border-color: #555;
+    }
+
+    body.dark .footer-credit a {
+      color: #f1f1f1;
+    }
+  </style>
+
+
   
-  <script>
-    // Hamburger menu toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-    
-    // Dark mode toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fruits.html">Fruits</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-credit">
+        <span>© 2025 <a href="#">NatureCompare</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+<style>
+/* Footer Styles */
+.footer {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-links li {
+    margin-right: 1rem;
+}
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+.footer-divider {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-color: #e2e8f0;
+}
+.footer-credit {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+.footer-credit a {
+    text-decoration: none;
+    color: #4a5568;
+}
+
+/* Dark Mode Footer Styles */
+body.dark .footer {
+    background-color: #333;
+    color: #f1f1f1;
+}
+body.dark .footer-links a {
+    color: #f1f1f1;
+}
+body.dark .footer-divider {
+    border-color: #555;
+}
+body.dark .footer-credit a {
+    color: #f1f1f1;
+}
+</style>
+
 </body>
+
 </html>

@@ -12,12 +12,7 @@
       --transition: all 0.3s ease;
     }
     
-    /* Dark Mode Variables */
-    body.dark {
-      --text-color: #f1f1f1;
-      --background-color: #222;
-      --card-background: #333;
-    }
+
     
     * {
       margin: 0;
@@ -51,10 +46,7 @@
       box-shadow: var(--shadow);
       transition: var(--transition);
     }
-    
-    body.dark header {
-      background-color: rgba(34, 34, 34, 0.95);
-    }
+   
     
     nav {
       display: flex;
@@ -116,15 +108,6 @@
       height: 3px;
       background: var(--text-color);
       transition: var(--transition);
-    }
-    
-    /* Dark Mode Toggle */
-    #theme-toggle {
-      background: none;
-      border: none;
-      font-size: 1.2rem;
-      cursor: pointer;
-      margin-left: 1rem;
     }
     
     /* Hero Section */
@@ -298,3 +281,88 @@
         max-width: 100%;
       }
     }
+
+    * Footer Styles */
+.footer {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-links li {
+    margin-right: 1rem;
+}
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+.footer-divider {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-color: #e2e8f0;
+}
+.footer-credit {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+.footer-credit a {
+    text-decoration: none;
+    color: #4a5568;
+}
+
+
+/* Dark Mode Footer Styles */
+body.dark .footer {
+  background-color: #333;
+  color: #f1f1f1;
+}
+body.dark .footer-links a {
+  color: #f1f1f1;
+}
+body.dark .footer-divider {
+  border-color: #555;
+}
+body.dark .footer-credit a {
+  color: #f1f1f1;
+}
+
+body.dark {
+  --text-color: #f1f1f1;
+  --background-color: #222;
+  --card-background: #333;
+}
+
+body.dark header {
+  background-color: rgba(34, 34, 34, 0.95);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
